@@ -24,18 +24,13 @@ function List(){
 const Laptop = () =>{
   return (
     <article>
-      <Image />
+      <img src="https://m.media-amazon.com/images/I/81VbWDN53oL._AC_SL1500_.jpg" alt="" />
       <div className='details'>
-        <Title />
-        <Author />
+        <h1>Apple Macbook Pro</h1>
+        <h4>Jasur Aripov</h4>
       </div>
     </article>
   )
 }
-
-const Image = () => <img src="https://m.media-amazon.com/images/I/81VbWDN53oL._AC_SL1500_.jpg" alt="" />
-const Title = () => <h1>Apple Macbook Pro</h1>
-const Author = () => <h4>Jasur Aripov</h4>
-
 
 ReactDom.render(<List />, document.getElementById("root"))
